@@ -1,3 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Cedarville%20Cursive);
+
 body {
-  border: 1px solid black;
+	font-family: 'Ubuntu', sans-serif;  background-color: #ddd;
+  margin: 0;
+}
+menu.navbar {
+  box-shadow: 0px 5px 5px #444;
+  background: #fff;
+  margin: 0;
+}
+menu.navbar > button {
+  border: 1px solid blue;
+  border-radius: 4px;
+  list-style-type: none;
+  float: right;
+  vertical-align: bottom;
+  padding: 4px;
+}
+menu.navbar > button:hover {
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  animation: bounceOut .4s linear;
+}
+.site-title {
+  display: inline-block;
+  font-size: larger;
+  padding: 0;
+}
+article {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #444;
+  margin: 12px;
+}
+article:hover {
+  box-shadow: 2px 3px 5px #444;
+}
+#welcome {
+  animation: bounceIn .4s linear;
+}
+.footer {
+  border-radius: 40%;
+  border-top: 2px solid #aaa;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white; 
+}
+.cursive {
+  font-family: 'Cedarville Cursive', sans-serif;  background-color: #ddd;
+  background-color: transparent;
+}
+
+@keyframes bounceIn {
+  0%{ width: 0; }
+  50%{ width: 100%}
+}
+@keyframes bounceOut {
+  0%{ box-shadow: 0 0 4px #333; opacity:1;}
+  25%{ box-shadow: 0 0 1px #333; opacity:1;}
+  50%{ box-shadow: 0 0 7px #333; opacity:1; }
+  75%{ box-shadow: 0 0 4px #333; opacity:1;}
+  100%{ box-shadow: 0 0 0px #333; opacity:1;}
 }
